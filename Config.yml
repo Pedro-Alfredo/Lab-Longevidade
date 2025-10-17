@@ -1,0 +1,25 @@
+# Configurações Essenciais do Site
+title: Lab Longevidade
+email: contato@lablongevidade.com
+description: >- # uma descrição curta e concisa para o seu site
+  Notícias e análises rigorosas baseadas em ciência sobre as últimas descobertas em longevidade, biohacking e otimização de performance.
+
+baseurl: "" # Se o seu site estiver na raiz do domínio (e.g., lablongevidade.com)
+url: "https://www.lablongevidade.com" # URL completa do seu site (com o domínio personalizado)
+
+# Configurações do Tema (Usamos um tema minimalista e oficial para simplicidade)
+remote_theme: jekyll/minima
+
+# Configurações de Postagens
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Arquivos/Pastas para ignorar na compilação
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Informações de Autoridade (Para reforçar a credibilidade)
+author:
+  name: Equipe Científica Lab Longevidade
+  bio: Análises de estudos com foco em Extensão de Vida e Alta Performance.

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Lab Longevidade - Notícias e Ciência da Longevidade e Biohacking
+---
+<header class="site-header">
+    <h1 class="site-title">{{ site.title }}</h1>
+    <p class="site-description">{{ site.description }}</p>
+</header>
+
+<main id="content" class="main-content" role="main">
+    <h2>Últimas Análises e Notícias Científicas</h2>
+
+    <ul class="post-list">
+      {% for post in site.posts limit: 5 %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%d/%m/%Y" }} - Categoria: {{ post.categories | join: ', ' }}</span>
+          <h3>
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h3>
+          <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">
+        <a href="{{ "/feed.xml" | relative_url }}">Assine nosso Feed RSS</a>
+    </p>
+</main>
